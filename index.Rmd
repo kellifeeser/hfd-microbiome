@@ -1,0 +1,19 @@
+---
+title: "PROJECT HOME"
+---
+
+
+```{r render-site, include=FALSE,eval=F}
+library(rmarkdown)
+library(bookdown)
+
+#knit this then commit and push
+
+#render 1_building_phylo_obj_raw_data_wrangling.Rmd
+rmarkdown::render("code/1_building_phylo_obj_raw_data_wrangling.Rmd", output_file="/Users/L347123/Desktop/REPO/docs/1_raw_data_wrangling")
+
+
+```
+
+
+<a href="1_raw_data_wrangling.html" target="_blank">Example link</a>
