@@ -1,5 +1,5 @@
 ---
-title: "PROJECT HOME"
+title: "HFD Amplicons: Data Visualization"
 ---
 
 
@@ -10,10 +10,16 @@ library(bookdown)
 #knit this then commit and push
 
 #render 1_building_phylo_obj_raw_data_wrangling.Rmd
-rmarkdown::render("code/1_building_phylo_obj_raw_data_wrangling.Rmd", output_file="/Users/L347123/Desktop/REPO/docs/1_raw_data_wrangling")
+rmarkdown::render("code/1_16S_otu_preprocessing_12wk.Rmd", output_file="/Users/L347123/Desktop/hfd-microbiome/docs/github_preprocessing_12wk")
 
 
 ```
 
+\
+\
 
-<a href="1_raw_data_wrangling.html" target="_blank">Example link</a>
+# 12-week experiment {.unnumbered}
+
+-   <a href="github_preprocessing_12wk.html" target="_blank">Sequence data/OTU pre-processing (last updated 10 June 2024)</a>
+
+

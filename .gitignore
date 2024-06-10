@@ -3,7 +3,7 @@
 .Rapp.history
 
 # Session Data files
-.RData
+*.RData
 .RDataTmp
 
 # User-specific files
@@ -40,10 +40,17 @@ vignettes/*.pdf
 .Renviron
 
 # pkgdown site
-# docs/
+docs/*.nb.html
+docs/raw_data/
 
 # translation temp files
 po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# code
+code/
+
+# big files
+raw_data/hfd2_12wk_fromcombined_map.txt

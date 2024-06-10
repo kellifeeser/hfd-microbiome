@@ -1,12 +1,12 @@
-name: "REPO/PROJECT"
+name: "hfd-microbiome-github-main"
 output:
   bookdown::html_document2:
     lib_dir: docs/site_libs
 output_dir: docs
 navbar:
-  title: "Data Visualization"
+  title: "HFD Microbiome: Data Visualization"
   left:
     - text: "Home"
       href: index.html
 
-baseurl: "/REPO/" # Set your base URL here
+baseurl: "/hfd-microbiome/" # Set your base URL here
