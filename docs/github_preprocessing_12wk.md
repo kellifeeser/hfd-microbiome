@@ -2,7 +2,7 @@
 title: "**HFD Microbiome: 16S Amplicon Pre-processing of 12-week Experiment**"
 subtitle: "Raw sequence processing and OTU table generation using usearch v11, OTU table cleaning using phyloseq (R), and basic data overview"
 author: "Kelli Feeser"
-date: "2024-06-10"
+date: "2025-04-02"
 output:
   bookdown::html_document2:
     code_folding: hide
@@ -39,23 +39,15 @@ editor_options:
 
 
 
-**Primers:**\
-~~- *939F* -- 5′ TTG ACG GGG GCC CGC ACA AG-3′\
-- *1492R* -- 5′-GTT TAC CTT GTT ACG ACT T-3′\
+**16S Primers:**\
+- *341F* -- 5′-CCT ACG GGN GGC WGC AG-3′\
+- *805R* -- 5′-GAC TAC HVG GGT ATC TAA TCC-3′\
 \
-GGTTACCTTGTTAGACTTGTGCGGGCCCCCGTCAA over rep seq:
-CGGTGGAGCATGTGGTTTAATTCGACGCAACGCGAAGAACCTTACCTGGG
-CGGTCTTGCGACCGTACTCCCCAGGCGGAGTGTTTCACGCGTTAGCTGGG
-GATGAACGCTGGCGGCATGCCTAACACATGCAAGTCGGACGGGAAGTGGT~~
 
-~~fwd TTGACGGGGGCCCGCACAAG - 3889280 of 4115088~~
 
-~~rev GTTTACCTTGTTACGACTT 1302 of 4115088 GGTTACCTTGTTACGACTT 3785444
-GGCTACCTTGTTACGACTT 6109~~
-
-~~**Expected Insert Length:**\
-- 554 bp\
-~~\
+**Expected Insert Length:**\
+- 465 bp\
+\
 
 # Basic Sequence Data Prep
 
@@ -186,7 +178,7 @@ usearch11.0.667_i86linux64
 
 
 ```{=html}
-<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; ; margin-left: auto; margin-right: auto;  " id="tab:raw-read-count-echo">
+<table class="huxtable" data-quarto-disable-processing="true" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; ; margin-left: auto; margin-right: auto;  " id="tab:raw-read-count-echo">
 <caption style="caption-side: top; text-align: center;">(#tab:raw-read-count-echo) </caption><col><col><tr>
 <th style="vertical-align: top; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.4pt 0pt;    padding: 10pt 6pt 6pt 10pt; font-weight: bold; font-size: 10pt;">Seqs per sample</th><th style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.4pt 0pt;    padding: 10pt 10pt 6pt 6pt; font-weight: bold; font-size: 10pt;">Full 16S OTU table</th></tr>
 <tr>
@@ -228,7 +220,7 @@ usearch11.0.667_i86linux64
 
 
 ```{=html}
-<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; ; margin-left: auto; margin-right: auto;  " id="tab:unique-domain-reads-table">
+<table class="huxtable" data-quarto-disable-processing="true" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; ; margin-left: auto; margin-right: auto;  " id="tab:unique-domain-reads-table">
 <caption style="caption-side: top; text-align: center;">(#tab:unique-domain-reads-table) </caption><col><col><col><tr>
 <th style="vertical-align: top; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.4pt 0pt;    padding: 10pt 6pt 6pt 10pt; font-weight: bold; font-size: 10pt;">Domain</th><th style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.4pt 0pt;    padding: 10pt 6pt 6pt 6pt; font-weight: bold; font-size: 10pt;">reads_assigned</th><th style="vertical-align: top; text-align: right; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.4pt 0pt;    padding: 10pt 10pt 6pt 6pt; font-weight: bold; font-size: 10pt;">percentage_all_reads</th></tr>
 <tr>
@@ -389,7 +381,7 @@ reads)\
 ### All samples, full depth range
 
 
-```r
+``` r
 par(mar = c(5.1, 4.1, 5.1, 2.1)) # c(bottom, left, top, right)
 
 dev.copy(png,'/Users/L347123/Desktop/hfd-microbiome/docs/figures/rarefaction/Rarecurve_12wk_fullrange.png',width = 650)

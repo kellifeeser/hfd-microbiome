@@ -42,6 +42,19 @@ vignettes/*.pdf
 # pkgdown site
 docs/*.nb.html
 docs/raw_data/
+meetings/
+hfd_manuscript/
+processed_data/clean_rds_saves/
+processed_data/DA/
+docs/processed_data/clean_rds_saves/
+docs/processed_data/DA/
+docs/metadata
+
+metadata/Penn State transcriptome metadata/
+
+*/.DS_Store
+*/*/.DS_Store
+*/*/*/.DS_Store
 
 # translation temp files
 po/*~

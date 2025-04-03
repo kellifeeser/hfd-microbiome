@@ -2,7 +2,6 @@
 title: "HFD Amplicons: Data Visualization"
 ---
 
-
 ```{r render-site, include=FALSE,eval=F}
 library(rmarkdown)
 library(bookdown)
@@ -10,8 +9,17 @@ library(bookdown)
 #knit this then commit and push
 
 #render 1_building_phylo_obj_raw_data_wrangling.Rmd
-rmarkdown::render("code/1_16S_otu_preprocessing_12wk.Rmd", output_file="/Users/L347123/Desktop/hfd-microbiome/docs/github_preprocessing_12wk")
+rmarkdown::render("code/1_16S_otu_preprocessing_12wk.Rmd", output_file = "/Users/L347123/Desktop/hfd-microbiome/docs/github_preprocessing_12wk")
 
+rmarkdown::render("code/1_16S_otu_preprocessing_02wk.Rmd", output_file = "/Users/L347123/Desktop/hfd-microbiome/docs/github_preprocessing_02wk")
+
+rmarkdown::render("code/2_taxonomy_1_setup_Bac_02wk.Rmd", output_file = "/Users/L347123/Desktop/hfd-microbiome/docs/github_taxonomy_setup_02wk")
+
+rmarkdown::render("code/OrganizingManuscriptAnalyses_wk02.Rmd", output_file = "/Users/L347123/Desktop/hfd-microbiome/docs/github_OrganizingManuscriptAnalyses_wk02")
+
+
+# 12 week organizing analyses
+rmarkdown::render("code/OrganizingManuscriptAnalyses_wk12.Rmd", output_file = "/Users/L347123/Desktop/hfd-microbiome/docs/github_OrganizingManuscriptAnalyses_wk12")
 
 ```
 
@@ -20,6 +28,12 @@ rmarkdown::render("code/1_16S_otu_preprocessing_12wk.Rmd", output_file="/Users/L
 
 # 12-week experiment {.unnumbered}
 
--   <a href="github_preprocessing_12wk.html" target="_blank">Sequence data/OTU pre-processing (last updated 10 June 2024)</a>
+-   <a href="github_preprocessing_12wk.html" target="_blank">Sequence data/OTU pre-processing</a> (last updated 2 May 2025)
+-   <a href="github_OrganizingManuscriptAnalyses_wk12.html" target="_blank">Organizing manuscript analyses</a> (last updated 2 May 2025)
 
+\
+\
 
+# 02-week experiment {.unnumbered}
+
+-   <a href="github_preprocessing_02wk.html" target="_blank">Sequence data/OTU pre-processing (last updated 03 Feb 2025)</a>
