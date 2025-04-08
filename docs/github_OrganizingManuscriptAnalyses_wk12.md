@@ -1,7 +1,7 @@
 ---
 title: '**HFD amplicons from 12-week experiment**: Organizing Manuscript Analyses'
 author: "Kelli Feeser"
-date: "2025-04-07"
+date: "2025-04-08"
 output:
   bookdown::html_document2:
     code_folding: hide
@@ -44,7 +44,7 @@ editor_options:
 
 ------------------------------------------------------------------------
 
-Document last updated: 2025-04-07
+Document last updated: 2025-04-08
 
 ------------------------------------------------------------------------
 
@@ -229,7 +229,7 @@ Goals here:
 
     4. Lay groundwork for linking those shifts to intestinal barrier defects or downstream disease.\
 
-![](/Users/L347123/Desktop/hfd-microbiome/docs/github_OrganizingManuscriptAnalyses_wk12_files/figure-html/bin-by-abund-wk0-1.png)<!-- -->
+
 
 
 \
@@ -239,8 +239,8 @@ Goals here:
 ### Figure 1 - Characterizing Day 0 Communities
 
 <div class="figure">
-<img src="/Users/L347123/Desktop/hfd-microbiome/docs/github_OrganizingManuscriptAnalyses_wk12_files/figure-html/fig-week0-composition-1.png" alt="Figure X. Community structure and compositional variability among Week-0 microbiotas. (A) Family-level taxonomic profiles across five pre-intervention stool samples reveal overlapping but non-identical communities. Several families are consistently dominant, but relative abundances vary across individuals. (B) Observed richness ranged from 301 to 311 OTUs (mean = 304.2), and Shannon entropy ranged from 4.31 to 4.39 (mean = 4.35), indicating modest baseline heterogeneity. (C) Pairwise Bray–Curtis dissimilarities ranged from 0.06 to 0.08 (mean = 0.07), defining the magnitude of inter-individual variation at baseline. (D) Distance to group centroid (mean = 0.044) quantifies beta dispersion under shared, pre-intervention conditions. These data define a reference distribution of compositional variability that contextualizes subsequent changes under dietary exposure."  />
-<p class="caption">(\#fig:fig-week0-composition)Figure X. Community structure and compositional variability among Week-0 microbiotas. (A) Family-level taxonomic profiles across five pre-intervention stool samples reveal overlapping but non-identical communities. Several families are consistently dominant, but relative abundances vary across individuals. (B) Observed richness ranged from 301 to 311 OTUs (mean = 304.2), and Shannon entropy ranged from 4.31 to 4.39 (mean = 4.35), indicating modest baseline heterogeneity. (C) Pairwise Bray–Curtis dissimilarities ranged from 0.06 to 0.08 (mean = 0.07), defining the magnitude of inter-individual variation at baseline. (D) Distance to group centroid (mean = 0.044) quantifies beta dispersion under shared, pre-intervention conditions. These data define a reference distribution of compositional variability that contextualizes subsequent changes under dietary exposure.</p>
+<img src="/Users/L347123/Desktop/hfd-microbiome/docs/github_OrganizingManuscriptAnalyses_wk12_files/figure-html/fig-week0-composition-1.png" alt="Figure X. Community structure and compositional variability among Week-0 microbiotas. (A) Family-level taxonomic profiles are relatively consistent across five pre-intervention stool samples, with communities dominated by Lactobacillaceae, Muribaculaceae, unclassified Bacteroidales, Lachnospiraceae (all families with a &gt;10% mean relative abundance).(B - old) Observed richness ranged from 301 to 311 OTUs (mean = 304.2), and Shannon entropy ranged from 4.31 to 4.39 (mean = 4.35), indicating modest baseline heterogeneity. (C) Pairwise Bray–Curtis dissimilarities ranged from 0.06 to 0.08 (mean = 0.07), defining the magnitude of inter-individual variation at baseline. (D) Distance to group centroid (mean = 0.044) quantifies beta dispersion under shared, pre-intervention conditions. These data define a reference distribution of compositional variability that contextualizes subsequent changes under dietary exposure."  />
+<p class="caption">(\#fig:fig-week0-composition)Figure X. Community structure and compositional variability among Week-0 microbiotas. (A) Family-level taxonomic profiles are relatively consistent across five pre-intervention stool samples, with communities dominated by Lactobacillaceae, Muribaculaceae, unclassified Bacteroidales, Lachnospiraceae (all families with a >10% mean relative abundance).(B - old) Observed richness ranged from 301 to 311 OTUs (mean = 304.2), and Shannon entropy ranged from 4.31 to 4.39 (mean = 4.35), indicating modest baseline heterogeneity. (C) Pairwise Bray–Curtis dissimilarities ranged from 0.06 to 0.08 (mean = 0.07), defining the magnitude of inter-individual variation at baseline. (D) Distance to group centroid (mean = 0.044) quantifies beta dispersion under shared, pre-intervention conditions. These data define a reference distribution of compositional variability that contextualizes subsequent changes under dietary exposure.</p>
 </div>
 
 
@@ -257,13 +257,39 @@ Sections goals: - Quantify how beta diversity components (Sørensen: turnover/ne
 
 
 
+plots are in SI...\
 
 
 
 
-![](/Users/L347123/Desktop/hfd-microbiome/docs/github_OrganizingManuscriptAnalyses_wk12_files/figure-html/temporal-abund-plot-refined-1.png)<!-- -->
 
-![](/Users/L347123/Desktop/hfd-microbiome/docs/github_OrganizingManuscriptAnalyses_wk12_files/figure-html/temporal-pa-plot-refined-1.png)<!-- -->
+
+
+### Venn diagrams by diet by week
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -310,6 +336,18 @@ Sections goals: - Quantify how beta diversity components (Sørensen: turnover/ne
 ------------------------------------------------------------------------
 
 # Additional figures (likely SI)
+
+\
+
+# Temporal beta diversity trends within cohorts
+
+
+![](/Users/L347123/Desktop/hfd-microbiome/docs/github_OrganizingManuscriptAnalyses_wk12_files/figure-html/temporal-abund-plot-refined-1.png)<!-- -->
+
+![](/Users/L347123/Desktop/hfd-microbiome/docs/github_OrganizingManuscriptAnalyses_wk12_files/figure-html/temporal-pa-plot-refined-1.png)<!-- -->
+
+
+\
 
 \
 
