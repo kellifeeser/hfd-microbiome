@@ -1,7 +1,7 @@
 ---
 title: '**HFD amplicons from 12-week experiment**: Organizing Manuscript Analyses'
 author: "Kelli Feeser"
-date: "2025-04-08"
+date: "2025-04-09"
 output:
   bookdown::html_document2:
     code_folding: hide
@@ -44,7 +44,7 @@ editor_options:
 
 ------------------------------------------------------------------------
 
-Document last updated: 2025-04-08
+Document last updated: 2025-04-09
 
 ------------------------------------------------------------------------
 
@@ -192,14 +192,9 @@ This is important because: - It defines how much divergence we expect by chance 
 
 
 
-Families Turicibacteraceae and Rikenellaceae and genera Alistipes, Duncaniella (G-), Limosilactobacillus, and Turicibacter were top 10 for Week-0, but not whole dataset. Conversely, Bacteroidaceae and Bifidobacteriaceae were not in the top 10 families for Week-O, nor were Bifidobacterium, Faecalibaculumm, uncl_Erysipelotrichaceae, or uncl_Oscillospiraceae in the top 10 genera for Week-O.\
+Families Turicibacteraceae and Rikenellaceae and genera Alistipes, Duncaniella (G-), Limosilactobacillus, and Turicibacter were top 10 for Week-0, but not whole dataset. Conversely, Bacteroidaceae and Bifidobacteriaceae were not in the top 10 families for Week-O, nor were Bifidobacterium, Faecalibaculumm, uncl_Erysipelotrichaceae, or uncl_Oscillospiraceae in the top 10 genera for Week-O.
 
-About *Duncaniella*:
-    - "We performed a large-scale experiment using 579 genetically identical laboratory mice from a single animal facility, designed to identify the causes of disease variability in the widely used dextran sulphate sodium mouse model of inflammatory bowel disease. Commonly used treatment endpoint measures—weight loss and intestinal pathology—showed limited correlation and varied across mouse lineages. Analysis of the gut microbiome, coupled with machine learning and targeted anaerobic culturing, identified and isolated two previously undescribed species, Duncaniella muricolitica and Alistipes okayasuensis, and demonstrated that they exert dominant effects in the dextran sulphate sodium model leading to variable treatment endpoint measures. We show that the identified gut microbial species are common, but not ubiquitous, in mouse facilities around the world, and suggest that researchers monitor for these species to provide experimental design opportunities for improved mouse models of human intestinal diseases." (@Forster2022)\
-
-
-
-
+-   About *Duncaniella*: - "We performed a large-scale experiment using 579 genetically identical laboratory mice from a single animal facility, designed to identify the causes of disease variability in the widely used dextran sulphate sodium mouse model of inflammatory bowel disease. Commonly used treatment endpoint measures—weight loss and intestinal pathology—showed limited correlation and varied across mouse lineages. Analysis of the gut microbiome, coupled with machine learning and targeted anaerobic culturing, identified and isolated two previously undescribed species, Duncaniella muricolitica and Alistipes okayasuensis, and demonstrated that they exert dominant effects in the dextran sulphate sodium model leading to variable treatment endpoint measures. We show that the identified gut microbial species are common, but not ubiquitous, in mouse facilities around the world, and suggest that researchers monitor for these species to provide experimental design opportunities for improved mouse models of human intestinal diseases." (@Forster2022)\
 
 
 
@@ -220,30 +215,27 @@ The low dissimilarity values of Week-0 samples (abundance-based multiple-site di
 
 ### Proportions of Rare vs. Dominant Taxa
 
-Goals here:
-    1. Show [macro-level] microbial community structure shifts under HFD.
+Goals here: 1. Show [macro-level] microbial community structure shifts under HFD.
 
-    2. Highlight how dominant vs. low-abundance taxa change across groups (e.g., HFD vs. control).
+```         
+2. Highlight how dominant vs. low-abundance taxa change across groups (e.g., HFD vs. control).
 
-    3. Establish whether certain taxonomic tiers (e.g., >10%) become more/less dominant.
+3. Establish whether certain taxonomic tiers (e.g., >10%) become more/less dominant.
 
-    4. Lay groundwork for linking those shifts to intestinal barrier defects or downstream disease.\
-
+4. Lay groundwork for linking those shifts to intestinal barrier defects or downstream disease.\
+```
 
 
 
 \
 \
-
 
 ### Figure 1 - Characterizing Day 0 Communities
 
 <div class="figure">
-<img src="/Users/L347123/Desktop/hfd-microbiome/docs/github_OrganizingManuscriptAnalyses_wk12_files/figure-html/fig-week0-composition-1.png" alt="Figure X. Community structure and compositional variability among Week-0 microbiotas. (A) Family-level taxonomic profiles are relatively consistent across five pre-intervention stool samples, with communities dominated by Lactobacillaceae, Muribaculaceae, unclassified Bacteroidales, Lachnospiraceae (all families with a &gt;10% mean relative abundance).(B - old) Observed richness ranged from 301 to 311 OTUs (mean = 304.2), and Shannon entropy ranged from 4.31 to 4.39 (mean = 4.35), indicating modest baseline heterogeneity. (C) Pairwise Bray–Curtis dissimilarities ranged from 0.06 to 0.08 (mean = 0.07), defining the magnitude of inter-individual variation at baseline. (D) Distance to group centroid (mean = 0.044) quantifies beta dispersion under shared, pre-intervention conditions. These data define a reference distribution of compositional variability that contextualizes subsequent changes under dietary exposure."  />
-<p class="caption">(\#fig:fig-week0-composition)Figure X. Community structure and compositional variability among Week-0 microbiotas. (A) Family-level taxonomic profiles are relatively consistent across five pre-intervention stool samples, with communities dominated by Lactobacillaceae, Muribaculaceae, unclassified Bacteroidales, Lachnospiraceae (all families with a >10% mean relative abundance).(B - old) Observed richness ranged from 301 to 311 OTUs (mean = 304.2), and Shannon entropy ranged from 4.31 to 4.39 (mean = 4.35), indicating modest baseline heterogeneity. (C) Pairwise Bray–Curtis dissimilarities ranged from 0.06 to 0.08 (mean = 0.07), defining the magnitude of inter-individual variation at baseline. (D) Distance to group centroid (mean = 0.044) quantifies beta dispersion under shared, pre-intervention conditions. These data define a reference distribution of compositional variability that contextualizes subsequent changes under dietary exposure.</p>
+<img src="/Users/L347123/Desktop/hfd-microbiome/docs/github_OrganizingManuscriptAnalyses_wk12_files/figure-html/fig-week0-composition-1.png" alt="Figure X. Community structure and compositional variability among Week-0 microbiotas. (A) Family-level taxonomic profiles are relatively consistent across five pre-intervention stool samples, with communities dominated by Lactobacillaceae, Muribaculaceae, unclassified Bacteroidales, Lachnospiraceae (all families with a &gt;10% mean relative abundance).(B - old) Observed richness ranged from 301 to 311 OTUs (mean = 304.2), and Shannon entropy ranged from 4.31 to 4.39 (mean = 4.35), indicating modest baseline heterogeneity. (C) Pairwise Bray–Curtis dissimilarities ranged from 0.06 to 0.08 (mean = 0.07), defining the magnitude of inter-individual variation at baseline. (D) Distance to group centroid (mean = 0.044) quantifies beta dispersion under shared, pre-intervention conditions. These data define a reference distribution of compositional variability (/baseline variablility) that contextualizes subsequent changes under dietary exposure."  />
+<p class="caption">(\#fig:fig-week0-composition)Figure X. Community structure and compositional variability among Week-0 microbiotas. (A) Family-level taxonomic profiles are relatively consistent across five pre-intervention stool samples, with communities dominated by Lactobacillaceae, Muribaculaceae, unclassified Bacteroidales, Lachnospiraceae (all families with a >10% mean relative abundance).(B - old) Observed richness ranged from 301 to 311 OTUs (mean = 304.2), and Shannon entropy ranged from 4.31 to 4.39 (mean = 4.35), indicating modest baseline heterogeneity. (C) Pairwise Bray–Curtis dissimilarities ranged from 0.06 to 0.08 (mean = 0.07), defining the magnitude of inter-individual variation at baseline. (D) Distance to group centroid (mean = 0.044) quantifies beta dispersion under shared, pre-intervention conditions. These data define a reference distribution of compositional variability (/baseline variablility) that contextualizes subsequent changes under dietary exposure.</p>
 </div>
-
-
 
 \
 
@@ -263,50 +255,67 @@ plots are in SI...\
 
 
 
+### Within-timepoint (community variation by week x diet)
 
-
-### Venn diagrams by diet by week
-
-
-
+#### Venn diagrams by diet by week
 
 
 
+![](../docs/figures/venn_diagrams/wks1_2_diet_venn.png){width="90%"}
+
+\
+
+![](../docs/figures/venn_diagrams/wks3_4_diet_venn.png){width="90%"}
 
 
+\
+
+![](../docs/figures/venn_diagrams/wks5_6_diet_venn.png){width="90%"}
+
+\
+
+![](../docs/figures/venn_diagrams/wks7_8_diet_venn.png){width="90%"}
+
+\
+
+![](../docs/figures/venn_diagrams/wks9_10_diet_venn.png){width="90%"}
+
+\
 
 
+![](../docs/figures/venn_diagrams/wks11_12_diet_venn.png){width="90%"}
 
+\
+\
 
+\
+\
 
+### Diet-driven change over time
 
+\
+\
 
+------------------------------------------------------------------------
 
+\
 
+## Questions in-progress
 
+### Whether different diets impose distinct assembly trajectories
 
+### What mechanisms (turnover vs nestedness, abundance shifts) drive those changes
 
+### When these changes stabilize or diverge
 
+### [Find G- taxa that consistently increase in HFD (for potential taxa-specific LPS characterization later)]
 
-
-
-
-
-
-
-
-## Whether different diets impose distinct assembly trajectories
-
-## What mechanisms (turnover vs nestedness, abundance shifts) drive those changes
-
-## When these changes stabilize or diverge
-
-## Correlations with host phenotype data
+### Correlations with host phenotype data
 
 *Major indicators of disease state and the relevant time periods*
 
 | Quantitative indicators of steatosis/steatohepatitis/fibrosis/cirrhosis | Disease (Proxy) Measurements | Control-diet | HFD | HFD-LA | Villin-Cre-HFD |
-|----|----|----|----|----|----|
+|------------|------------|------------|------------|------------|------------|
 | Overview/Notes |  |  | Generally, increased IP by week 4 and disease state by week 6 | No leaky gut phenotype | ? |
 | Indicator of barrier dysfunction | [Serum LPS]{.underline} (in healthy mice: 50-100 pg/mL) - Large molecule, needs defective barrier to cross into bloodstream (via portal vein -\> then liver disease) |  | Based on linear standard curve - Big jumps in weeks 3 & 4, then decreases by still high |  |  |
 |  | [Luminal LPS]{.underline}? |  |  |  |  |
@@ -331,6 +340,8 @@ plots are in SI...\
 -   enterocyte TLR4/CD14 expression, IκBα phosphorylation, and NF-κB translocation (evidence of immune cell infiltration)
 -   I don't have these data...
 
+\
+
 ------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
@@ -341,11 +352,71 @@ plots are in SI...\
 
 # Temporal beta diversity trends within cohorts
 
+Temporal β: - How stable or variable microbial community composition is within each diet each week - Whether dissimilarity is driven more by abundance rearrangement (balanced) or net change/loss (gradient)\
 
-![](/Users/L347123/Desktop/hfd-microbiome/docs/github_OrganizingManuscriptAnalyses_wk12_files/figure-html/temporal-abund-plot-refined-1.png)<!-- -->
+Decomposing Bray and Sørensen allows for: - Distinguishing between abundance-driven vs. taxon-presence-driven patterns - Highlighting when community reorganization occurs without richness loss (low nestedness, high turnover) - Detecting when changes are functionally inert (e.g., nestedness without turnover)\
+
+Caution: don't over-interpret Bray...\
+
+<table class="table table-striped table-hover table-condensed" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>(\#tab:compare-bray-sor-table)Comparison of Bray–Curtis and Sørensen β-dissimilarity decompositions.</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Aspect </th>
+   <th style="text-align:center;"> Bray.Curtis.Plot </th>
+   <th style="text-align:center;"> Sørensen.Plot </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Dissimilarity Type </td>
+   <td style="text-align:center;"> Abundance-weighted </td>
+   <td style="text-align:center;"> Presence/absence-based </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Component Mechanisms </td>
+   <td style="text-align:center;"> Balanced reallocation vs. abundance gradients </td>
+   <td style="text-align:center;"> Species turnover vs. nested loss </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Ecological Implication </td>
+   <td style="text-align:center;"> Shifts in abundance hierarchy or biomass </td>
+   <td style="text-align:center;"> Changes in species identity (turnover or loss) </td>
+  </tr>
+</tbody>
+</table>
+
+
+
+
+
+<div class="figure">
+<img src="/Users/L347123/Desktop/hfd-microbiome/docs/github_OrganizingManuscriptAnalyses_wk12_files/figure-html/temporal-abund-plot-refined-1.png" alt="Figure X. Timepoint-resolved profiles of within-cohort dissimilarity, decomposed by abundance-weighted (Bray–Curtis) and presence/absence-based (Sørensen) β-dissimilarity metrics and their components, with loess fit (solid lines) and weekly means (dotted lines) shown. Data were bootstrapped (n = 1,000), so points are aggregated estimates per week per cohort
+Each panel shows dissimilarity values derived from bootstrapped 4-sample subsets within each diet cohort at each timepoint (week-0 having only control-diet stool samples). Solid lines indicate loess-smoothed trends across weeks, dotted lines represent the weekly cohort means. All values reflect within-cohort dissimilarity among mice receiving the same diet at the same timepoint.
+(A) Total abundance-weighted (Bray–Curtis) dissimilarity: Overall community dissimilarity remained relatively stable within most cohorts, with mild increases in some high-fat diet groups over time. The mean abundanced-weighted dissimilarity among all cohorts within the study period was 0.22, with values ranging from 0.09 to 0.53.
+(B) Balanced variation component: Balanced variation accounted for most within-cohort dissimilarity within each weekly sampling. The majority of Bray-Curtis dissimilarity was attributable to changes in the relative abundance of shared taxa (mean = 0.22), indicating reshuffling within a shared taxonomic framework.
+(C) Abundance gradient component: Gradient dissimilarity was generally low throughout (max = 0.41), consistent with minimal/limited directional shifts in taxon dominance or loss.
+(D) Total Sørensen dissimilarity (β&lt;sub&gt;SOR&lt;/sub&gt;): Presence/absence-based dissimilarity showed similar cohort-level trends to abundance-based metrics, capturing taxonomic divergence not driven by abundance.
+(E) Species turnover (β&lt;sub&gt;SIM&lt;/sub&gt;): The majority of Sørensen dissimilarity (mean of 0.36, or 85.7%) was attributable to species turnover, reflecting taxonomic replacement within timepoints within each cohort.
+(F) Nestedness-resultant dissimilarity (β&lt;sub&gt;SNE&lt;/sub&gt;): This component contributed minimally (mean = 0.068), indicating that richness loss or gain without taxon replacement was rare.
+Total dissimilarity remained relatively stable across time within most cohorts. Balanced variation accounted for the majority of observed dissimilarity, consistent with changes in relative abundance of shared taxa rather than directional gain or loss. Abundance gradient dissimilarity was consistently low, with occasional spikes at specific timepoints (notably at Week 5 and 10), suggesting transient shifts in community dominance or compositional dropout.
+Together, these results suggest that within-group divergence across all diets was primarily driven by subtle reorganization of shared taxa (abundance changes and replacement, i.e., balanced), rather than large-scale species loss or gain."  />
+<p class="caption">(\#fig:temporal-abund-plot-refined)Figure X. Timepoint-resolved profiles of within-cohort dissimilarity, decomposed by abundance-weighted (Bray–Curtis) and presence/absence-based (Sørensen) β-dissimilarity metrics and their components, with loess fit (solid lines) and weekly means (dotted lines) shown. Data were bootstrapped (n = 1,000), so points are aggregated estimates per week per cohort
+Each panel shows dissimilarity values derived from bootstrapped 4-sample subsets within each diet cohort at each timepoint (week-0 having only control-diet stool samples). Solid lines indicate loess-smoothed trends across weeks, dotted lines represent the weekly cohort means. All values reflect within-cohort dissimilarity among mice receiving the same diet at the same timepoint.
+(A) Total abundance-weighted (Bray–Curtis) dissimilarity: Overall community dissimilarity remained relatively stable within most cohorts, with mild increases in some high-fat diet groups over time. The mean abundanced-weighted dissimilarity among all cohorts within the study period was 0.22, with values ranging from 0.09 to 0.53.
+(B) Balanced variation component: Balanced variation accounted for most within-cohort dissimilarity within each weekly sampling. The majority of Bray-Curtis dissimilarity was attributable to changes in the relative abundance of shared taxa (mean = 0.22), indicating reshuffling within a shared taxonomic framework.
+(C) Abundance gradient component: Gradient dissimilarity was generally low throughout (max = 0.41), consistent with minimal/limited directional shifts in taxon dominance or loss.
+(D) Total Sørensen dissimilarity (β<sub>SOR</sub>): Presence/absence-based dissimilarity showed similar cohort-level trends to abundance-based metrics, capturing taxonomic divergence not driven by abundance.
+(E) Species turnover (β<sub>SIM</sub>): The majority of Sørensen dissimilarity (mean of 0.36, or 85.7%) was attributable to species turnover, reflecting taxonomic replacement within timepoints within each cohort.
+(F) Nestedness-resultant dissimilarity (β<sub>SNE</sub>): This component contributed minimally (mean = 0.068), indicating that richness loss or gain without taxon replacement was rare.
+Total dissimilarity remained relatively stable across time within most cohorts. Balanced variation accounted for the majority of observed dissimilarity, consistent with changes in relative abundance of shared taxa rather than directional gain or loss. Abundance gradient dissimilarity was consistently low, with occasional spikes at specific timepoints (notably at Week 5 and 10), suggesting transient shifts in community dominance or compositional dropout.
+Together, these results suggest that within-group divergence across all diets was primarily driven by subtle reorganization of shared taxa (abundance changes and replacement, i.e., balanced), rather than large-scale species loss or gain.</p>
+</div>
+
+\
+\
 
 ![](/Users/L347123/Desktop/hfd-microbiome/docs/github_OrganizingManuscriptAnalyses_wk12_files/figure-html/temporal-pa-plot-refined-1.png)<!-- -->
-
 
 \
 
@@ -412,6 +483,58 @@ The rise or fall of Bray-Curtis turnover or gradient components over time may ma
 
 *Implications for Microbiome Modulation and Therapeutics* If dietary intervention induces convergence (i.e., reduced β-diversity), this may suggest loss of ecological insurance or constraint of functional redundancy. Conversely, sustained compositional heterogeneity may reflect resilience or adaptation. Understanding how β-diversity structures functional output has clear implications for microbiome engineering and translational strategies.\
 \
+
+------------------------------------------------------------------------
+
+# Manuscript Guidelines (ignore)
+
+***Cell Host and Microbe***
+
+**The main figure titles and legends should not be part of the image files**, but should instead appear at the end of the main manuscript file.
+
+**Please ensure they have clear file names (e.g., Figure 1.tif)** and are \< **20 MB.**
+
+-   TIFF is recommended for bitmap (line art), grayscale, and color images. TIFF supports several good compression schemes, ensuring that file sizes are kept to a minimum to aid easy file transfer. To downsize TIFF files, please use LZW compression.
+
+-   PDF is recommended for any type of figure or image. High-quality PDFs can contain vector graphics as well as pixel-based images in their original formats, preserving your figures as you intend them to be displayed. To downsize PDF files, use the "Reduced Size PDF" option from the File \> Save As menu.
+
+**Each figure must fit on a single page**. We recommend that figures be a maximum of 6.5 x 8 in (16.5 x 20 cm) to allow for page margins and text. When your article is typeset, we will try to include the entire figure caption/legend below each image; if the figure is too large, this may not be possible. Maximum widths are as follows:
+
+-   8.5 cm (1 column) ➜ 3.34"
+-   11.4 cm (1.5 columns) ➜ 4.48"
+-   17.4 cm (full width of the page) ➜ 6.85"
+
 \
-\
-\
+
+## Guidelines for artwork preparation
+
+If your paper is accepted for publication, we ask that you consider the following when preparing your final figures for production:
+
+-   Always embed fonts, and use only Arial fonts
+-   When using layers, reduce to one layer (flatten artwork) before saving your image
+-   Different panels should be labeled with capital letters
+-   Text should be about 6–8 pt at the desired print size
+-   Figure resolutions should be as follows: for color or grayscale figures, at least 300 dpi; for black and white figures, at least 500 dpi; for line-art figures, at least 1,000 dpi at the desired print size
+-   Make sure that any raster artwork within the source document is at the appropriate minimum resolution
+-   If used, color should be encoded as RGB
+-   Limit vertical space between parts of an illustration to only what is necessary for visual clarity
+-   Line weights or stroke widths should be in the 0.5–1.5 pt range
+-   Gray fills should be kept at least 20% different from other fills and no lighter than 10% or darker than 80%\
+
+## Graphical abstracts
+
+The graphical abstract is a single-panel, square image that is designed to give readers an immediate understanding of the take-home message of the paper. Its intent is to encourage browsing, promote interdisciplinary scholarship, and help readers quickly identify which papers are most relevant to their research interests. Please refer to the [Cell Press graphical abstracts guidelines](https://www.cell.com/pb/assets/raw/shared/figureguidelines/GA_guide-1537202744020.pdf) for examples of and comprehensive instructions for graphical abstracts.\
+
+## Example Figures
+
+from: [Multi-cohort analysis reveals colorectal cancer tumor location-associated fecal microbiota and their clinical impact](https://www.cell.com/cell-host-microbe/fulltext/S1931-3128(25)00095-2)
+
+![](images/Screen%20Shot%202025-04-09%20at%2010.45.23%20AM.png){width="12.6cm"}
+
+![](images/Screen%20Shot%202025-04-09%20at%2010.40.15%20AM.png){width="9.1cm"}
+
+![](images/Screen%20Shot%202025-04-09%20at%2010.42.28%20AM.png){width="8.1cm"}
+
+------------------------------------------------------------------------
+
+# References
