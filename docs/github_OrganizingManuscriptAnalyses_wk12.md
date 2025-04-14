@@ -1,7 +1,7 @@
 ---
 title: '**HFD amplicons from 12-week experiment**: Organizing Manuscript Analyses'
 author: "Kelli Feeser"
-date: "2025-04-09"
+date: "2025-04-14"
 output:
   bookdown::html_document2:
     code_folding: hide
@@ -44,7 +44,7 @@ editor_options:
 
 ------------------------------------------------------------------------
 
-Document last updated: 2025-04-09
+Document last updated: 2025-04-14
 
 ------------------------------------------------------------------------
 
@@ -177,7 +177,8 @@ We first used a community ecology framework to assess ... Our [analytical aims] 
 
 ## Characterizing Day 0 Communities
 
-\
+-   Add stability of control diet over time
+-   consider all control-diet OTUs
 
 
 
@@ -215,15 +216,15 @@ The low dissimilarity values of Week-0 samples (abundance-based multiple-site di
 
 ### Proportions of Rare vs. Dominant Taxa
 
-Goals here: 1. Show [macro-level] microbial community structure shifts under HFD.
+Goals here:
 
-```         
-2. Highlight how dominant vs. low-abundance taxa change across groups (e.g., HFD vs. control).
+1\. Show [macro-level] microbial community structure shifts under HFD.
 
-3. Establish whether certain taxonomic tiers (e.g., >10%) become more/less dominant.
+2\. Highlight how dominant vs. low-abundance taxa change across groups (e.g., HFD vs. control).
 
-4. Lay groundwork for linking those shifts to intestinal barrier defects or downstream disease.\
-```
+3\. Establish whether certain taxonomic tiers (e.g., \>10%) become more/less dominant.
+
+4\. Lay groundwork for linking those shifts to intestinal barrier defects or downstream disease.\
 
 
 
@@ -259,14 +260,11 @@ plots are in SI...\
 
 #### Venn diagrams by diet by week
 
-
-
 ![](../docs/figures/venn_diagrams/wks1_2_diet_venn.png){width="90%"}
 
 \
 
 ![](../docs/figures/venn_diagrams/wks3_4_diet_venn.png){width="90%"}
-
 
 \
 
@@ -282,7 +280,6 @@ plots are in SI...\
 
 \
 
-
 ![](../docs/figures/venn_diagrams/wks11_12_diet_venn.png){width="90%"}
 
 \
@@ -291,7 +288,43 @@ plots are in SI...\
 \
 \
 
-### Diet-driven change over time
+## Diet-driven change over time
+
+\
+\
+
+### Find G- taxa that consistently increase in HFD (for potential taxa-specific LPS characterization later)
+
+\
+
+-   Considering only Control-diet vs. HFD
+-   I will filter to only G- taxa (later after confirming gram classification)
+-   Enrichment Criteria
+    -   A taxon is considered HFD-enriched if:
+        -   (Time-matched contrast): It is more abundant in HFD vs. Control-diet at the same timepoint, and/or
+            -   For each week W, test if a given OTU is significantly more abundant in HFD vs Control.
+            -   captures diet effect at each timepoint
+        -   (Longitudinal contrast): It increases in HFD mice over time relative to Week-0 baseline.
+            -   For each OTU in HFD samples, test if it increases from Week-0 to later timepoints.
+            -   captures within-cohort/diet temporal shifts due to HFD
+        -   Other: a) require a minimal prevalence (e.g. present in ≥25% of samples in a given group/timepoint) to minimize noise; b) minimum mean relative abundance in HFD samples of 0.1% per week
+        -   We are collecting significant OTUs per timepoint to allow for identification of transient or persistent enrichments
+        -   Significance assessed via Wilcoxon test per OTU, fdr correction (if OTU present in both groups)
+    -   We are investigating microbial shifts driven by a high-fat diet (HFD) over time, particularly in taxa (OTUs) that:
+        -   Emerge or expand in HFD-fed mice over time (even if absent at baseline/week 0) / If an OTU is absent (zero) in Control-diet Week-0, but present in HFD at later weeks, we still want to consider it enriched — even if the Wilcoxon test isn’t valid due to lack of variance in one group.
+        -   Are not present or less abundant in baseline (Control-diet Week-0)
+        -   May be transient or persistent, but still relevant to early or chronic HFD effects.
+        -   Are classified as Gram-negative, supporting hypotheses about endotoxin (LPS) exposure, intestinal permeability, and NAFLD progression.
+
+Prevalence refers to the proportion of HFD samples in which each OTU was detected (\>0 abundance).\
+
+
+
+
+
+
+
+![](../docs/figures/DA_plots/taxa_enrichedinHFD_min1perc_allgram.png){width="110%"}
 
 \
 \
@@ -302,27 +335,41 @@ plots are in SI...\
 
 ## Questions in-progress
 
-### Whether different diets impose distinct assembly trajectories
-
-### What mechanisms (turnover vs nestedness, abundance shifts) drive those changes
-
 ### When these changes stabilize or diverge
 
-### [Find G- taxa that consistently increase in HFD (for potential taxa-specific LPS characterization later)]
+\
+\
+\
 
 ### Correlations with host phenotype data
 
 *Major indicators of disease state and the relevant time periods*
 
-| Quantitative indicators of steatosis/steatohepatitis/fibrosis/cirrhosis | Disease (Proxy) Measurements | Control-diet | HFD | HFD-LA | Villin-Cre-HFD |
-|------------|------------|------------|------------|------------|------------|
-| Overview/Notes |  |  | Generally, increased IP by week 4 and disease state by week 6 | No leaky gut phenotype | ? |
-| Indicator of barrier dysfunction | [Serum LPS]{.underline} (in healthy mice: 50-100 pg/mL) - Large molecule, needs defective barrier to cross into bloodstream (via portal vein -\> then liver disease) |  | Based on linear standard curve - Big jumps in weeks 3 & 4, then decreases by still high |  |  |
-|  | [Luminal LPS]{.underline}? |  |  |  |  |
-|  | [Dextran 4kd Flux]{.underline} |  | Starts to increase vs control in week 3 |  |  |
-|  | [Dextran 10kd Flux]{.underline} |  | only week 12 |  |  |
-| Defective liver function | serum ALT |  |  |  |  |
-| ? | Percentage of weight gain throughout trial |  |  |  |  |
++----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+-----------------------------------------------------------------------------------------+------------------------+----------------+
+| Quantitative                     | Disease (Proxy) Measurements                                                                                                                                         | Control-diet | HFD                                                                                     | HFD-LA                 | Villin-Cre-HFD |
+|                                  |                                                                                                                                                                      |              |                                                                                         |                        |                |
+| indicators of steatosis/         |                                                                                                                                                                      |              |                                                                                         |                        |                |
+|                                  |                                                                                                                                                                      |              |                                                                                         |                        |                |
+| steatohepatitis/                 |                                                                                                                                                                      |              |                                                                                         |                        |                |
+|                                  |                                                                                                                                                                      |              |                                                                                         |                        |                |
+| fibrosis/                        |                                                                                                                                                                      |              |                                                                                         |                        |                |
+|                                  |                                                                                                                                                                      |              |                                                                                         |                        |                |
+| cirrhosis                        |                                                                                                                                                                      |              |                                                                                         |                        |                |
++==================================+======================================================================================================================================================================+==============+=========================================================================================+========================+================+
+| Overview/Notes                   |                                                                                                                                                                      |              | Generally, increased IP by week 4 and disease state by week 6                           | No leaky gut phenotype | ?              |
++----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+-----------------------------------------------------------------------------------------+------------------------+----------------+
+| Indicator of barrier dysfunction | [Serum LPS]{.underline} (in healthy mice: 50-100 pg/mL) - Large molecule, needs defective barrier to cross into bloodstream (via portal vein -\> then liver disease) |              | Based on linear standard curve - Big jumps in weeks 3 & 4, then decreases by still high |                        |                |
++----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+-----------------------------------------------------------------------------------------+------------------------+----------------+
+|                                  | [Luminal LPS]{.underline}?                                                                                                                                           |              |                                                                                         |                        |                |
++----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+-----------------------------------------------------------------------------------------+------------------------+----------------+
+|                                  | [Dextran 4kd Flux]{.underline}                                                                                                                                       |              | Starts to increase vs control in week 3                                                 |                        |                |
++----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+-----------------------------------------------------------------------------------------+------------------------+----------------+
+|                                  | [Dextran 10kd Flux]{.underline}                                                                                                                                      |              | only week 12                                                                            |                        |                |
++----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+-----------------------------------------------------------------------------------------+------------------------+----------------+
+| Defective liver function         | serum ALT                                                                                                                                                            |              |                                                                                         |                        |                |
++----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+-----------------------------------------------------------------------------------------+------------------------+----------------+
+| ?                                | Percentage of weight gain throughout trial                                                                                                                           |              |                                                                                         |                        |                |
++----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+-----------------------------------------------------------------------------------------+------------------------+----------------+
 
 : Description of host phenotype markers. Data include host disease state and proxy measurements by diet and timepoint. (These are just my notes — please suggest improvements)
 
