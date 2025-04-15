@@ -107,6 +107,8 @@ The distinctness of the ... communities was assessed using the Random Forests cl
 
 # Introduction
 
+## hidden {.hidden .unnumbered .unlisted}
+
 [note:I know intros don't use subheaders, these are just for organization]
 
 **Microbiota–Diet Interactions in NAFLD Pathogenesis** Non-alcoholic fatty liver disease (NAFLD) is a leading cause of chronic liver disease globally, strongly associated with dietary patterns, particularly excessive intake of high-fat diets (HFDs). Numerous clinical and preclinical studies have identified shifts in gut microbiota composition during NAFLD development, implicating the microbiome as a mediator of metabolic dysregulation, hepatic steatosis, and inflammation. Experimental evidence supports roles for microbially derived metabolites—including short-chain fatty acids, secondary bile acids, and endotoxins—in promoting liver fat accumulation, disrupting immune signaling, and modulating systemic insulin sensitivity.
@@ -147,25 +149,23 @@ To interrogate patterns of microbial divergence, we applied ecological partition
 
 ~~We applied both presence–absence and abundance-based dissimilarity metrics to quantify divergence in microbial communities over time. By decomposing microbial community dissimilarity into interpretable and ecologically meaningful components: turnover and nestedness for presence/absence (Sørensen) and balanced and gradient components for abundance (Bray–Curtis),~~ we aimed to address the following questions:
 
-```         
-- To what extent do microbial communities diverge over time within and between diet cohorts?
+-   To what extent do microbial communities diverge over time within and between diet cohorts?
 
-- Are these changes driven predominantly by species replacement, loss of richness, or abundance shifts?
+-   Are these changes driven predominantly by species replacement, loss of richness, or abundance shifts?
 
-- Do high-fat diets induce deterministic filtering and convergence across replicates, or preserve individualized community trajectories?
+-   Do high-fat diets induce deterministic filtering and convergence across replicates, or preserve individualized community trajectories?
 
-- Can these patterns of community dissimilarity inform future efforts to modulate the microbiome in NAFLD?
-```
+-   Can these patterns of community dissimilarity inform future efforts to modulate the microbiome in NAFLD?
 
-[alt: **Aims:** Determine how microbial communities diverge over time and across distinct high-fat and control diets using β-diversity partitioning.
+[*alt: **Aims:** Determine how microbial communities diverge over time and across distinct high-fat and control diets using β-diversity partitioning.*
 
-Link microbial community assembly processes (e.g., deterministic filtering vs. stochastic drift) to specific dietary interventions and host metabolic states.
+*Link microbial community assembly processes (e.g., deterministic filtering vs. stochastic drift) to specific dietary interventions and host metabolic states.*
 
-Evaluate temporal dynamics of β-diversity (turnover, nestedness, Bray partitions) to infer successional patterns or biotic homogenization associated with NAFLD development.
+*Evaluate temporal dynamics of β-diversity (turnover, nestedness, Bray partitions) to infer successional patterns or biotic homogenization associated with NAFLD development.*
 
-Ultimately, connect microbial compositional divergence to functional potential and host phenotype trajectories (e.g., liver histology, metabolic markers, inflammation).]
+*Ultimately, connect microbial compositional divergence to functional potential and host phenotype trajectories (e.g., liver histology, metabolic markers, inflammation).*]
 
-This approach enables us to interpret compositional change not merely as a shift in taxa, but as the emergent outcome of ecological processes. By integrating ecological theory with longitudinal microbiome profiling, this study provides a [~~mechanistic~~] foundation for understanding how diet-induced microbial restructuring unfolds at the community level—and how these changes may contribute to metabolic disease progression or resilience.
+This approach enables us to interpret compositional change not merely as a shift in taxa, but as the emergent outcome of ecological processes. By integrating ecological theory with longitudinal microbiome profiling, this study provides a [~~mechanistic~~] foundation for understanding how diet-induced microbial restructuring unfolds at the community level—and how these changes may contribute to metabolic disease progression or resilience. [prior to this work in expectations/hypotheses relevant to LA and knockout mice]
 
 ------------------------------------------------------------------------
 
@@ -175,16 +175,18 @@ This approach enables us to interpret compositional change not merely as a shift
 
 We first used a community ecology framework to assess ... Our [analytical aims] were 1) characterize the baseline community variation ... 2) assess temporal trajecories within and among diet cohorts 3) build off the previous to narrow in on key HFD-driven, temporally-relevant, perburations in community structure. By partitioning community dissimilarity [... explain betapart rationale] ... Following @Mori2018, we treat β-diversity not just as a pattern, but as a mechanistic lens to infer how microbial community assembly processes shape functional outcomes under ...diets... over time.”
 
-## Characterizing Day 0 Communities
-
--   Add stability of control diet over time
--   consider all control-diet OTUs
 
 
 
 
+## Research Question 1: What is the magnitude and nature of baseline variation? [A: relatively stable and species-rich?]
 
-### Compositional overlaps
+Sections goals:
+
+-   Understand the baseline heterogeneity among starting microbiomes before dietary intervention. / Establish baseline expectations [~~null model for future divergence comparisons.~~]
+-   Find shared and unique OTUs among week 0 samples, compare with community membership across study period
+-   Identify range of dissimilarity, dominant mechanisms (turnover vs nestedness).
+-   Find any anomalous [pairwise?] outliers.
 
 the baseline compositional heterogeneity (or lack thereof) among samples that began with identical conditions.
 
@@ -193,24 +195,35 @@ This is important because: - It defines how much divergence we expect by chance 
 
 
 
-Families Turicibacteraceae and Rikenellaceae and genera Alistipes, Duncaniella (G-), Limosilactobacillus, and Turicibacter were top 10 for Week-0, but not whole dataset. Conversely, Bacteroidaceae and Bifidobacteriaceae were not in the top 10 families for Week-O, nor were Bifidobacterium, Faecalibaculumm, uncl_Erysipelotrichaceae, or uncl_Oscillospiraceae in the top 10 genera for Week-O.
-
--   About *Duncaniella*: - "We performed a large-scale experiment using 579 genetically identical laboratory mice from a single animal facility, designed to identify the causes of disease variability in the widely used dextran sulphate sodium mouse model of inflammatory bowel disease. Commonly used treatment endpoint measures—weight loss and intestinal pathology—showed limited correlation and varied across mouse lineages. Analysis of the gut microbiome, coupled with machine learning and targeted anaerobic culturing, identified and isolated two previously undescribed species, Duncaniella muricolitica and Alistipes okayasuensis, and demonstrated that they exert dominant effects in the dextran sulphate sodium model leading to variable treatment endpoint measures. We show that the identified gut microbial species are common, but not ubiquitous, in mouse facilities around the world, and suggest that researchers monitor for these species to provide experimental design opportunities for improved mouse models of human intestinal diseases." (@Forster2022)\
 
 
+
+
+
+
+### Characterizing Day 0 Communities
+
+-   Add stability of control diet over time
+
+-   consider all control-diet OTUs
+
+
+![](/Users/L347123/Desktop/hfd-microbiome/docs/github_OrganizingManuscriptAnalyses_wk12_files/figure-html/week0-piecharts-1.png)<!-- -->
 
 \
 \
 
-### Dissimilarity Partitioning
+*Comparing to full dataset/across all weeks*
 
+The initial/starting communities (n = 5) contained over half of all of the OTUs detected across the whole dataset (364 of the total 624 OTUs, or 58.3%). Each of the 5 random Week-0 stool samples were comprised of 301 to 311 OTUs.
 
+Families Turicibacteraceae and Rikenellaceae and genera Alistipes, Duncaniella (G-), Limosilactobacillus, and Turicibacter were top 10 for Week-0, but not whole dataset. Conversely, Bacteroidaceae and Bifidobacteriaceae were not in the top 10 families for Week-0, nor were Bifidobacterium, Faecalibaculumm, uncl_Erysipelotrichaceae, or uncl_Oscillospiraceae in the top 10 genera for Week-0.
 
+-   About *Duncaniella*: - "We performed a large-scale experiment using 579 genetically identical laboratory mice from a single animal facility, designed to identify the causes of disease variability in the widely used dextran sulphate sodium mouse model of inflammatory bowel disease. Commonly used treatment endpoint measures—weight loss and intestinal pathology—showed limited correlation and varied across mouse lineages. Analysis of the gut microbiome, coupled with machine learning and targeted anaerobic culturing, identified and isolated two previously undescribed species, Duncaniella muricolitica and Alistipes okayasuensis, and demonstrated that they exert dominant effects in the dextran sulphate sodium model leading to variable treatment endpoint measures. We show that the identified gut microbial species are common, but not ubiquitous, in mouse facilities around the world, and suggest that researchers monitor for these species to provide experimental design opportunities for improved mouse models of human intestinal diseases." (@Forster2022)
 
+#### [Dissimilarity Partitioning...]
 
-Sections goals: - "What is the magnitude and nature of baseline variation?" Understand the baseline heterogeneity among starting microbiomes before dietary divergence. - Identify range of dissimilarity, dominant mechanisms (turnover vs nestedness). - Find any anomalous pairwise outliers. - Establish a baseline null model for future divergence comparisons.\
-
-The initial/starting communities (n = 5) contained over half of all of the OTUs detected across the whole dataset (364 of the total 624 OTUs, or 58.3%). Each of the 5 random Week-0 stool samples were comprised of 301 to 311 OTUs. These communities had an overall abundance-based multiple-site dissimilarity of 0.175 (`betapart::beta.multi.abund()`) and a presence/absence-based total multiple-site dissimilarity of 0.204 (`betapart::beta.multi()`). The turnover or species replacement component, measured as the Simpson dissimilarity, represented 93.99% of the total presence/absence-based dissimilarity. Pairwise comparisons of Week-0 communities showed that a minimum 23 of and a maximum of 30 OTUs were not shared between pairs of these initial samples.
+These communities had an overall abundance-based multiple-site dissimilarity of 0.175 (`betapart::beta.multi.abund()`) and a presence/absence-based total multiple-site dissimilarity of 0.204 (`betapart::beta.multi()`). The turnover or species replacement component, measured as the Simpson dissimilarity, represented 93.99% of the total presence/absence-based dissimilarity. Pairwise comparisons of Week-0 communities showed that a minimum 23 of and a maximum of 30 OTUs were not shared between pairs of these initial samples.
 
 The low dissimilarity values of Week-0 samples (abundance-based multiple-site dissimilarity of 0.175 (`betapart::beta.multi.abund()`) and a presence/absence-based total multiple-site dissimilarity of 0.204) indicates that the baseline communities were relatively homogeneous. Closer examination of these differences revealed that the vast majority, 93.99%, of dissimilarity was attributable to turnover, suggesting that even at baseline, species replacement — not simple richness differences — was the primary mechanism differentiating these microbiomes. This level of heterogeneity at T0 provides a critical context: downstream changes due to diet must exceed this baseline variability to be considered biologically meaningful. This Week-0 landscape acts as a null model against which future community divergence (due to diet and time) can be compared, and should be factored into interpretation of assembly trajectories.\
 
@@ -228,10 +241,17 @@ Goals here:
 
 
 
+
+
+
+
 \
 \
 
 ### Figure 1 - Characterizing Day 0 Communities
+
+![](../docs/figures/venn_diagrams/wk0_bin_abund_panel.png){width="70%"}
+
 
 <div class="figure">
 <img src="/Users/L347123/Desktop/hfd-microbiome/docs/github_OrganizingManuscriptAnalyses_wk12_files/figure-html/fig-week0-composition-1.png" alt="Figure X. Community structure and compositional variability among Week-0 microbiotas. (A) Family-level taxonomic profiles are relatively consistent across five pre-intervention stool samples, with communities dominated by Lactobacillaceae, Muribaculaceae, unclassified Bacteroidales, Lachnospiraceae (all families with a &gt;10% mean relative abundance).(B - old) Observed richness ranged from 301 to 311 OTUs (mean = 304.2), and Shannon entropy ranged from 4.31 to 4.39 (mean = 4.35), indicating modest baseline heterogeneity. (C) Pairwise Bray–Curtis dissimilarities ranged from 0.06 to 0.08 (mean = 0.07), defining the magnitude of inter-individual variation at baseline. (D) Distance to group centroid (mean = 0.044) quantifies beta dispersion under shared, pre-intervention conditions. These data define a reference distribution of compositional variability (/baseline variablility) that contextualizes subsequent changes under dietary exposure."  />
@@ -244,41 +264,43 @@ Goals here:
 
 \
 
-Sections goals: - Quantify how beta diversity components (Sørensen: turnover/nestedness, Bray: balanced/gradient) evolve within each cohort across time. - Show temporal stabilization, dietary divergence, and succession mechanisms.\
+Sections goals:
+
+-   Quantify how beta diversity components (Sørensen: turnover/nestedness, Bray: balanced/gradient) evolve within each cohort across time.
+-   Show temporal stabilization, dietary divergence, and succession mechanisms.\
 
 
 
 
 
-plots are in SI...\
+plots are in SI... [Temporal beta diversity trends within cohorts]\
 
 
 
 
+
+Add/switch to shared OTUs among baseline/control by week
 
 ### Within-timepoint (community variation by week x diet)
 
 #### Venn diagrams by diet by week
 
+(still need to clean up legends, spacing, etc)
+
 ![](../docs/figures/venn_diagrams/wks1_2_diet_venn.png){width="90%"}
 
-\
 
 ![](../docs/figures/venn_diagrams/wks3_4_diet_venn.png){width="90%"}
 
-\
 
 ![](../docs/figures/venn_diagrams/wks5_6_diet_venn.png){width="90%"}
 
-\
 
 ![](../docs/figures/venn_diagrams/wks7_8_diet_venn.png){width="90%"}
 
-\
 
 ![](../docs/figures/venn_diagrams/wks9_10_diet_venn.png){width="90%"}
 
-\
 
 ![](../docs/figures/venn_diagrams/wks11_12_diet_venn.png){width="90%"}
 
@@ -293,13 +315,13 @@ plots are in SI...\
 \
 \
 
-### Find G- taxa that consistently increase in HFD (for potential taxa-specific LPS characterization later)
+### Finding G- taxa that consistently increase in HFD (for potential taxa-specific LPS characterization later)
 
 \
 
 -   Considering only Control-diet vs. HFD
 -   I will filter to only G- taxa (later after confirming gram classification)
--   Enrichment Criteria
+-   *Enrichment Criteria*
     -   A taxon is considered HFD-enriched if:
         -   (Time-matched contrast): It is more abundant in HFD vs. Control-diet at the same timepoint, and/or
             -   For each week W, test if a given OTU is significantly more abundant in HFD vs Control.
@@ -311,8 +333,8 @@ plots are in SI...\
         -   We are collecting significant OTUs per timepoint to allow for identification of transient or persistent enrichments
         -   Significance assessed via Wilcoxon test per OTU, fdr correction (if OTU present in both groups)
     -   We are investigating microbial shifts driven by a high-fat diet (HFD) over time, particularly in taxa (OTUs) that:
-        -   Emerge or expand in HFD-fed mice over time (even if absent at baseline/week 0) / If an OTU is absent (zero) in Control-diet Week-0, but present in HFD at later weeks, we still want to consider it enriched — even if the Wilcoxon test isn’t valid due to lack of variance in one group.
-        -   Are not present or less abundant in baseline (Control-diet Week-0)
+        -   Emerge or expand in HFD-fed mice over time (even if absent at baseline/week 0) / If an OTU is undetected/absent (zero) in Week-0, but present in HFD at later weeks, we still want to consider it enriched — even if the Wilcoxon test isn’t valid due to lack of variance in one group.
+        -   Are not present or less abundant in baseline (Week-0)
         -   May be transient or persistent, but still relevant to early or chronic HFD effects.
         -   Are classified as Gram-negative, supporting hypotheses about endotoxin (LPS) exposure, intestinal permeability, and NAFLD progression.
 
@@ -324,7 +346,7 @@ Prevalence refers to the proportion of HFD samples in which each OTU was detecte
 
 
 
-![](../docs/figures/DA_plots/taxa_enrichedinHFD_min1perc_allgram.png){width="110%"}
+![](../docs/figures/DA_plots/taxa_enrichedinHFD_min1perc_allgram.png){width="130%"}
 
 \
 \
@@ -333,11 +355,10 @@ Prevalence refers to the proportion of HFD samples in which each OTU was detecte
 
 \
 
-## Questions in-progress
+## Questions in-progress...
 
 ### When these changes stabilize or diverge
 
-\
 \
 \
 
@@ -513,6 +534,10 @@ Together, these results suggest that within-group divergence across all diets wa
 ------------------------------------------------------------------------
 
 # Discussion
+
+locked for now
+
+## hidden {.hidden .unnumbered .unlisted}
 
 [Interpret how HFD-induced microbiome changes contribute to increased intestinal permeability and subsequent NAFLD development, integrating existing literature.]
 
