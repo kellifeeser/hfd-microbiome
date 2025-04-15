@@ -1,7 +1,7 @@
 ---
 title: '**HFD amplicons from 12-week experiment**: Organizing Manuscript Analyses'
 author: "Kelli Feeser"
-date: "2025-04-14"
+date: "2025-04-15"
 output:
   bookdown::html_document2:
     code_folding: hide
@@ -44,7 +44,7 @@ editor_options:
 
 ------------------------------------------------------------------------
 
-Document last updated: 2025-04-14
+Document last updated: 2025-04-15
 
 ------------------------------------------------------------------------
 
@@ -119,7 +119,7 @@ In an effort to delineate the microbial contributions to NAFLD, many(?) studies 
 
 As a result, relatively little is known about the community-level principles that govern microbiota restructuring during chronic dietary perturbation. In particular, the ecological processes underlying microbial community divergence across diets and over time remain poorly defined. Without this understanding, it is difficult to distinguish between deterministic patterns of microbial selection (e.g., driven by nutrient availability or host immune tone) and stochastic community drift. This gap limits our ability to generalize microbial signatures of disease or therapeutic response across models and populations.\
 
-**Community Dissimilarity as a [Mechanistic] Lens on Microbial Assembly and Function** Gut microbiota contribute fundamentally to host metabolism, immune calibration, nutrient processing, and epithelial barrier integrity. These functions are not only shaped by microbial taxonomic composition but also by emergent properties of community structure and assembly. A substantial body of work demonstrates that within-sample diversity (α-diversity) correlates with microbial richness, metabolic flexibility, and functional potential. However, a growing body of theory and empirical evidence increasingly recognizes that variation between communities—β-diversity—is an equally critical determinant of system-level resilience, responsiveness, and ecological function (@Mori2018). Moreover, [it is a more?] biologically-meaningful dimension of microbiome [variation]...
+**Community Dissimilarity as a [~~Mechanistic~~] Lens on Microbial Assembly and Function (if there is a story here)** Gut microbiota contribute fundamentally to host metabolism, immune calibration, nutrient processing, and epithelial barrier integrity. These functions are not only shaped by microbial taxonomic composition but also by emergent properties of community structure and assembly. A substantial body of work demonstrates that within-sample diversity (α-diversity) correlates with microbial richness, metabolic flexibility, and functional potential. However, a growing body of theory and empirical evidence increasingly recognizes that variation between communities—β-diversity—is an equally critical determinant of system-level resilience, responsiveness, and ecological function (@Mori2018). Moreover, [it is a more?] biologically-meaningful dimension of microbiome [variation]...
 
 In both natural ecosystems and host-associated microbiotas, β-diversity captures how communities differ—in composition, structure, and inferred function—across space, time, or treatment. This inter-sample variation plays a central role in shaping not only which functions are present, but how they are distributed, and whether they are redundant or complementary across systems. In the context of complex diseases such as non-alcoholic fatty liver disease (NAFLD), it is increasingly evident that microbial community composition varies substantially between individuals even under identical genetic and dietary backgrounds, and that this variation may modulate host susceptibility to metabolic dysfunction.
 
@@ -207,7 +207,6 @@ This is important because: - It defines how much divergence we expect by chance 
 
 -   consider all control-diet OTUs
 
-
 ![](/Users/L347123/Desktop/hfd-microbiome/docs/github_OrganizingManuscriptAnalyses_wk12_files/figure-html/week0-piecharts-1.png)<!-- -->
 
 \
@@ -243,15 +242,12 @@ Goals here:
 
 
 
-
-
 \
 \
 
 ### Figure 1 - Characterizing Day 0 Communities
 
 ![](../docs/figures/venn_diagrams/wk0_bin_abund_panel.png){width="70%"}
-
 
 <div class="figure">
 <img src="/Users/L347123/Desktop/hfd-microbiome/docs/github_OrganizingManuscriptAnalyses_wk12_files/figure-html/fig-week0-composition-1.png" alt="Figure X. Community structure and compositional variability among Week-0 microbiotas. (A) Family-level taxonomic profiles are relatively consistent across five pre-intervention stool samples, with communities dominated by Lactobacillaceae, Muribaculaceae, unclassified Bacteroidales, Lachnospiraceae (all families with a &gt;10% mean relative abundance).(B - old) Observed richness ranged from 301 to 311 OTUs (mean = 304.2), and Shannon entropy ranged from 4.31 to 4.39 (mean = 4.35), indicating modest baseline heterogeneity. (C) Pairwise Bray–Curtis dissimilarities ranged from 0.06 to 0.08 (mean = 0.07), defining the magnitude of inter-individual variation at baseline. (D) Distance to group centroid (mean = 0.044) quantifies beta dispersion under shared, pre-intervention conditions. These data define a reference distribution of compositional variability (/baseline variablility) that contextualizes subsequent changes under dietary exposure."  />
@@ -260,7 +256,7 @@ Goals here:
 
 \
 
-## Temporal Beta Diversity Decomposition: Within vs. Between Timepoints & Diets (How communities change over time)
+## Research Quesetion 2: Community stability / Temporal Beta Diversity Decomposition: Within vs. Between Timepoints & Diets (How communities change over time)
 
 \
 
@@ -289,18 +285,13 @@ Add/switch to shared OTUs among baseline/control by week
 
 ![](../docs/figures/venn_diagrams/wks1_2_diet_venn.png){width="90%"}
 
-
 ![](../docs/figures/venn_diagrams/wks3_4_diet_venn.png){width="90%"}
-
 
 ![](../docs/figures/venn_diagrams/wks5_6_diet_venn.png){width="90%"}
 
-
 ![](../docs/figures/venn_diagrams/wks7_8_diet_venn.png){width="90%"}
 
-
 ![](../docs/figures/venn_diagrams/wks9_10_diet_venn.png){width="90%"}
-
 
 ![](../docs/figures/venn_diagrams/wks11_12_diet_venn.png){width="90%"}
 
@@ -346,10 +337,70 @@ Prevalence refers to the proportion of HFD samples in which each OTU was detecte
 
 
 
+
+
+
 ![](../docs/figures/DA_plots/taxa_enrichedinHFD_min1perc_allgram.png){width="130%"}
 
-\
-\
+HFD-Enriched OTUs Across 12 Weeks
+
+### **HFD feeding enriches a temporally structured set of OTUs, with variable persistence and magnitude across the 12-week timecourse**
+
+To identify bacteria that were enriched in HFD-fed mice relative to baseline, we compared the fecal microbiome of WT HFD-fed mice at each timepoint (Weeks 1–12) to Week-0 samples using two parallel criteria:
+(1) Wilcoxon tests between groups (FDR-adjusted p \< 0.05) and
+(2) an emergent OTU filter, capturing taxa absent in all control samples but present at ≥25% prevalence and ≥1% mean abundance in HFD mice.
+
+A total of 51 OTUs were identified as significantly enriched in at least one week of HFD exposure. OTUs were further grouped by persistence, defined as the number of weeks they were detected as enriched out of 12 total timepoints. This resulted in:
+
+-   16 transiently enriched OTUs (enriched in 1–2 weeks),
+-   7 moderately persistent OTUs (3–4 weeks), and
+-   28 highly persistent OTUs (≥5 weeks).
+
+Notably, highly persistent OTUs accounted for the majority of enriched signals and showed a broader range of abundance and enrichment magnitude over time.
+
+Most highly persistent OTUs (enriched 11-12 weeks):
+
+
+
+
+OTU35, OTU41, OTU90 were persistent 12/12 weeks.  OTU28, OTU30, OTU3979, OTU4852, OTU77 were persistent 11/12 weeks.  
+    - OTU28: Bacillota; Clostridia; Eubacteriales; Lachnospiraceae; Dorea; uncl_Dorea - HFD 2.8% vs Control 0.1%
+    - OTU30: Bacillota; Clostridia; Eubacteriales; Lachnospiraceae; uncl_Lachnospiraceae; uncl_Lachnospiraceae - HFD 1.1% vs Control 0%
+    - OTU35: Bacillota; Clostridia; Eubacteriales; Lachnospiraceae; uncl_Lachnospiraceae; uncl_Lachnospiraceae - HFD 5% vs Control 0%
+    - OTU3979: Bacillota; Clostridia; Eubacteriales; Lachnospiraceae; uncl_Lachnospiraceae; uncl_Lachnospiraceae - HFD 1.2% vs Control 0%
+    - OTU41: Pseudomonadota; Deltaproteobacteria; Desulfovibrionales; Desulfovibrionaceae; uncl_Desulfovibrionaceae; uncl_Desulfovibrionaceae - HFD 1% vs Control 0%
+    - OTU4852: Bacillota; Erysipelotrichia; Erysipelotrichales; Erysipelotrichaceae; Faecalibaculum; rodentium - HFD 3.3% vs Control 0%
+    - OTU77: Actinomycetota; Coriobacteriia; Eggerthellales; Eggerthellaceae; Adlercreutzia; caecimuris - HFD 1.4% vs Control 0.4%
+    - OTU90: Bacteroidota; Bacteroidia; Bacteroidales; uncl_Bacteroidales; uncl_Bacteroidales; uncl_Bacteroidales - HFD 1.6% vs Control 0%
+
+
+### **OTU enrichment varies in timing and magnitude, with distinct persistent taxa dominating later weeks**
+
+OTUs ranged in mean relative abundance from 1% (minimum threshold for inclusion) to 15.1% in HFD mice, with the most persistent OTUs consistently exceeding 5–10% in abundance. Among the highly persistent group, the most frequently enriched OTUs included:
+
+-   **unclass_Prevotellaceae–OTU458** (mean HFD abundance 2.0%),
+
+-   **unclass_Lachnospiraceae–OTU15** (1.5%),
+
+-   **Blautia–OTU220** (4.3%),
+
+-   **Ligilactobacillus–OTU244** (1.1%), and
+
+-   **unclass_Lactobacillales–OTU70** (1.5%)
+
+These OTUs were enriched across 5 or more weeks, with several showing early detection (Week 1–2) and sustained elevation through Week 12.
+
+Temporal patterns of enrichment varied:
+
+-   Several OTUs (e.g., **Akkermansia–OTU130**, **Clostridium sensu stricto–OTU241**) appeared **transiently**, peaking briefly at Week 1 or Week 8 before disappearing. Others, such as **unclass_Bacteroidales–OTU142**, demonstrated consistent presence from Week 4 onward.
+
+Color mapping of log2 fold change (log2FC) revealed substantial inter-OTU variability in enrichment magnitude, ranging from log2FC \~1 (2-fold change) to values exceeding log2FC = 20. Emerging OTUs — shown as triangles — exhibited especially high fold changes, reflecting their complete absence from baseline controls.
+
+### **High-fat diet induces a broad ecological shift dominated by a subset of persistently elevated taxa**
+
+Overall, HFD feeding led to reproducible enrichment of a core set of moderately to highly abundant OTUs, many of which were sustained over multiple timepoints. These results reflect both **acute microbiome remodeling** in the early phases of HFD exposure and a **stabilization of distinct HFD-associated taxa** with longer-term feeding.
+
+The consistent detection of certain taxa over time and their high relative abundance suggest that these organisms may play a role in mediating or maintaining the gut environment under chronic dietary fat stress.
 
 ------------------------------------------------------------------------
 
@@ -418,7 +469,7 @@ Prevalence refers to the proportion of HFD samples in which each OTU was detecte
 
 \
 
-# Temporal beta diversity trends within cohorts
+## Temporal beta diversity trends within cohorts
 
 Temporal β: - How stable or variable microbial community composition is within each diet each week - Whether dissimilarity is driven more by abundance rearrangement (balanced) or net change/loss (gradient)\
 
