@@ -107,6 +107,32 @@ The distinctness of the ... communities was assessed using the Random Forests cl
 
 # Introduction
 
+Nonalcoholic fatty liver disease (NAFLD) is a rapidly growing global health concern and the most common cause of chronic liver disease worldwide. Its prevalence has risen in parallel with obesity, type 2 diabetes, and metabolic syndrome, and it now affects nearly one in three adults globally. NAFLD encompasses a spectrum of liver pathology, ranging from simple steatosis to nonalcoholic steatohepatitis (NASH), fibrosis, cirrhosis, and hepatocellular carcinoma. Despite extensive efforts, there are currently no approved pharmacologic therapies for NAFLD, and clinical management remains limited to diet and lifestyle modification.
+
+Over the past decade, the gut microbiota has emerged as a critical regulator of host metabolism and a central player in NAFLD pathogenesis. The gut-liver axis—a bidirectional communication pathway linking the intestinal microbiota and the liver via the portal circulation—enables microbial metabolites, antigens, and endotoxins to directly influence hepatic physiology and immune responses (Li et al., 2017). Perturbations in this axis, particularly those arising from gut microbial dysbiosis and impaired intestinal barrier function, are increasingly recognized as upstream drivers of liver disease.
+
+A growing body of evidence implicates increased intestinal permeability (IP) and the translocation of microbial products, especially lipopolysaccharide (LPS) from Gram-negative bacteria, as key mediators of HFD-induced liver pathology (Ciaula et al., 2020). Elevated LPS levels activate Toll-like receptor 4 (TLR4) on hepatic immune and parenchymal cells, triggering MyD88-dependent inflammatory signaling cascades that promote the production of pro-inflammatory cytokines such as TNF-α and IL-6, thereby exacerbating hepatic steatosis and injury. Importantly, these events are initiated at the level of the intestinal epithelial tight junction (TJ) barrier, whose disruption facilitates microbial translocation and systemic endotoxemia.
+
+Although the association between NAFLD and increased intestinal permeability is well documented, a critical gap in mechanistic understanding remains. Specifically, it is unclear whether a defective intestinal TJ barrier is simply a consequence of liver inflammation or a primary pathogenic factor in NAFLD development. Furthermore, the molecular mechanisms by which HFD induces barrier dysfunction—and whether this process can be therapeutically targeted—remain incompletely defined.
+
+To address these fundamental questions, we investigate the hypothesis that HFD-induced increase in intestinal permeability is a sine qua non pathogenic driver of NAFLD, and that targeted modulation of the intestinal TJ barrier can prevent or reverse liver disease. Our preliminary studies support this model by demonstrating that:
+(1) increased IP is required for both hepatic steatosis and inflammation,
+(2) HFD consumption leads to a rapid rise in gut-derived LPS,
+(3) the LPS-TLR4 signaling axis is essential for both IP and NAFLD development, and
+(4) HFD upregulates myosin light chain kinase (MLCK), a key effector of TJ regulation, which mediates barrier dysfunction and liver injury.
+
+Strikingly, we also observed that molecular targeting of the intestinal TJ barrier via the probiotic Lactobacillus acidophilus LA1 suppressed MLCK activation, preserved TJ integrity, and prevented disease progression. These findings suggest that probiotic-driven modulation of host-microbiota interactions at the epithelial interface offers a novel therapeutic avenue for the treatment of NAFLD.
+
+To test these mechanistic hypotheses, we employed a controlled experimental design comprising four mouse cohorts:
+(1) control-diet-fed mice,
+(2) wild-type mice fed a high-fat diet (HFD),
+(3) HFD-fed wild-type mice supplemented with L. acidophilus LA1 (HFD-LA1), and
+(4) HFD-fed Villin-Cre TLR4/MyD88-deficient mice with impaired epithelial innate immune signaling.
+This approach allows us to dissect the individual and combined contributions of diet, microbiota, and host immune sensing to the breakdown of intestinal barrier function and the development of NAFLD.
+
+By integrating microbiome analysis with host immune and epithelial phenotyping, our study aims to clarify the causal role of the intestinal barrier in HFD-induced NAFLD and to explore whether therapeutic strengthening of this barrier represents a viable strategy to halt or reverse disease progression.\
+\
+
 ## hidden {.hidden .unnumbered .unlisted}
 
 [note:I know intros don't use subheaders, these are just for organization]
@@ -303,6 +329,55 @@ Add/switch to shared OTUs among baseline/control by week
 
 ## Diet-driven change over time
 
+\
+\
+
+### Microbial community structure diverges over time in response to high-fat diet and host genotype, with stabilization by probiotic intervention
+
+![](../docs/figures/nmds/BC_dietshape_weekcolor_facetdiet.png)
+
+To evaluate the longitudinal impact of chronic high-fat diet (HFD) exposure and probiotic intervention on gut microbial community structure, we performed non-metric multidimensional scaling (NMDS) based on Bray-Curtis dissimilarities of fecal microbial profiles collected over a 12-week time course (Figure NMDS). The ordination yielded a low stress value (Stress = 0.042), indicating a high-fidelity two-dimensional representation of underlying community distances with excellent preservation of rank-order dissimilarities and high interpretability. NMDS revealed distinct temporal and treatment-specific trajectories in microbial community composition, reflecting both ecological divergence and the influence of diet and host factors on microbial assembly.
+
+In control-diet mice, microbial communities remained tightly clustered throughout the 12-week period, indicating high temporal stability and resistance to compositional drift under baseline dietary conditions. In contrast, wild-type mice fed a chronic HFD exhibited a pronounced, directional trajectory across NMDS space, with progressive separation from week 0 to week 12. This shift denotes a sustained restructuring of the gut microbiome consistent with microbial dysbiosis, likely reflecting the expansion of pathobionts and loss of commensal taxa known to accompany metabolic disease progression.
+
+redundant: Microbiota from control-diet mice remained tightly clustered throughout the time course, with minimal drift across weeks. This tight grouping indicates a high degree of temporal stability and ecological resilience under non-perturbative dietary conditions, suggesting that the gut microbial community remains in a homeostatic state in the absence of dietary or host stressors.
+    - Tight clustering over time.
+    - Minimal drift across weeks.
+    - Stable community structure → consistent microbiota under non-perturbing diet.
+
+In contrast, wild-type mice fed a high-fat diet (HFD) exhibited a striking, directional shift in NMDS space, progressing from week 0 (yellow) to week 12 (dark purple) along both NMDS1 and NMDS2 axes. This progressive divergence suggests a sustained and coordinated community restructuring, consistent with HFD-induced microbial dysbiosis. The trajectory implies gradual depletion of protective taxa ~~(e.g., Firmicutes such as Lachnospiraceae, Bacteroidetes)~~ and enrichment of inflammation-associated microbes ~~(e.g., Proteobacteria)~~, paralleling the development of intestinal permeability and NAFLD phenotypes observed in this group.
+    - Strong, directional shift along both NMDS1 and NMDS2 axes from week 0 → week 12.
+    - Suggests progressive microbial dysbiosis driven by chronic HFD.
+    - This directional community remodeling tracks with disease progression — i.e., NAFLD phenotype and leaky gut.
+
+Mice receiving HFD supplemented with *Lactobacillus acidophilus* (HFD-LA1) also exhibited early shifts away from baseline community structure; however, this trajectory plateaued mid-way through the experiment and culminated in a stably clustered endpoint distinct from both control and wild-type HFD groups. Notably, the magnitude of divergence from baseline was reduced relative to the wild-type HFD group, indicating that LA1 intervention limited the extent of community remodeling. The tight clustering of later timepoints suggests ecological stabilization, consistent with resistance to full-blown dysbiosis. These findings align with prior observations that LA1 preserves intestinal barrier function and prevents hepatic steatosis, suggesting that LA1 may promote microbiota resilience and functional homeostasis, potentially through enrichment of TJ-supporting or anti-inflammatory taxa.
+    - Early shift away from week 0 community, but then stabilizes into a distinct cluster by mid-late timepoints.
+    - Reduced trajectory compared to wild-type HFD — less total shift in community space.
+    - Suggests LA1 buffers against full-blown HFD-induced dysbiosis.
+    - Implies ecological stabilization and resilience — perhaps maintenance of barrier-supporting taxa (e.g., Akkermansia, Lactobacilli).
+    - Supports idea that LA1 preserves gut homeostasis via TJ integrity + microbiome modulation.
+
+
+
+Interestingly, HFD-fed Villin-Cre mice lacking epithelial TLR4/MyD88 signaling (Villin-Cre-HFD) followed a trajectory distinct from both wild-type HFD and HFD-LA1 groups. While these mice also exhibited temporal drift, they progressed to a unique region of NMDS space, clearly separated from all other treatment arms. This distinct clustering pattern supports the conclusion that epithelial TLR4/MyD88 signaling is required for canonical HFD-induced microbial remodeling. In its absence, the gut microbiota responds to dietary fat exposure along an alternative trajectory, resulting in a non-pathogenic microbial configuration that does not support the development of increased intestinal permeability or NAFLD. These results further suggest that host innate immune pathways shape the ecological response of the microbiome to environmental perturbation, and their disruption alters the gut’s microbiota-disease axis.
+    - Also shows a trajectory over time, but it’s clearly distinct from WT-HFD and from LA1-HFD.
+    - Ends in a different region of NMDS space, forming a unique stable endpoint.
+    - Likely reflects how immune signaling shapes host-microbiome cross-talk — TLR signaling is critical for microbial sensing.
+    - The distinct endpoint suggests that even under HFD, microbiota does not follow the canonical path of dysbiosis.
+    - Supports hypothesis that TLR4/MyD88 signaling is required for HFD-induced dysbiotic shift.
+
+
+
+Together, these findings demonstrate that chronic HFD induces a reproducible and progressive shift in gut microbial community structure that is dependent on host innate immune signaling and is mitigated by probiotic intervention. Chronic HFD induces a consistent, directional community shift associated with intestinal barrier dysfunction and hepatic inflammation. In contrast, both probiotic intervention and genetic disruption of TLR4/MyD88 signaling redirect microbial succession, yielding distinct and functionally protective community endpoints. These data reinforce the idea that gut microbial ecology is a central node in the pathogenesis of HFD-induced NAFLD and a viable target for therapeutic modulation. The observed patterns provide strong support for a model in which gut microbial ecology is both a driver and a biomarker of intestinal permeability and downstream NAFLD pathogenesis.
+
+*Significance:*
+    - HFD fundamentally reshapes the gut microbial community over time, consistent with induction of NAFLD.
+    - Probiotic LA1 intervention limits this remodeling, stabilizing the microbiome — ecologically and functionally consistent with a protective role.
+    - Host immune signaling (TLR4/MyD88) is essential for driving or permitting the dysbiotic transition — suggesting a host-microbe co-pathogenic axis.
+    - NMDS space itself reflects functional microbial ecology:
+        - WT-HFD ends in “inflammatory” space.
+        - LA1-HFD stabilizes in a “resilient” space.
+        - Villin-Cre ends in “non-pathogenic alternative” space.
 \
 \
 
