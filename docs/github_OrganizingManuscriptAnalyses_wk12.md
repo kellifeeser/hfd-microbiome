@@ -1,7 +1,7 @@
 ---
 title: '**HFD amplicons from 12-week experiment**: Organizing Manuscript Analyses'
 author: "Kelli Feeser"
-date: "2025-04-15"
+date: "2025-05-13"
 output:
   bookdown::html_document2:
     code_folding: hide
@@ -44,7 +44,7 @@ editor_options:
 
 ------------------------------------------------------------------------
 
-Document last updated: 2025-04-15
+Document last updated: 2025-05-13
 
 ------------------------------------------------------------------------
 
@@ -275,6 +275,11 @@ Goals here:
 
 ![](../docs/figures/venn_diagrams/wk0_bin_abund_panel.png){width="70%"}
 
+
+```
+## [1] '2.0.0'
+```
+
 <div class="figure">
 <img src="/Users/L347123/Desktop/hfd-microbiome/docs/github_OrganizingManuscriptAnalyses_wk12_files/figure-html/fig-week0-composition-1.png" alt="Figure X. Community structure and compositional variability among Week-0 microbiotas. (A) Family-level taxonomic profiles are relatively consistent across five pre-intervention stool samples, with communities dominated by Lactobacillaceae, Muribaculaceae, unclassified Bacteroidales, Lachnospiraceae (all families with a &gt;10% mean relative abundance).(B - old) Observed richness ranged from 301 to 311 OTUs (mean = 304.2), and Shannon entropy ranged from 4.31 to 4.39 (mean = 4.35), indicating modest baseline heterogeneity. (C) Pairwise Bray–Curtis dissimilarities ranged from 0.06 to 0.08 (mean = 0.07), defining the magnitude of inter-individual variation at baseline. (D) Distance to group centroid (mean = 0.044) quantifies beta dispersion under shared, pre-intervention conditions. These data define a reference distribution of compositional variability (/baseline variablility) that contextualizes subsequent changes under dietary exposure."  />
 <p class="caption">(\#fig:fig-week0-composition)Figure X. Community structure and compositional variability among Week-0 microbiotas. (A) Family-level taxonomic profiles are relatively consistent across five pre-intervention stool samples, with communities dominated by Lactobacillaceae, Muribaculaceae, unclassified Bacteroidales, Lachnospiraceae (all families with a >10% mean relative abundance).(B - old) Observed richness ranged from 301 to 311 OTUs (mean = 304.2), and Shannon entropy ranged from 4.31 to 4.39 (mean = 4.35), indicating modest baseline heterogeneity. (C) Pairwise Bray–Curtis dissimilarities ranged from 0.06 to 0.08 (mean = 0.07), defining the magnitude of inter-individual variation at baseline. (D) Distance to group centroid (mean = 0.044) quantifies beta dispersion under shared, pre-intervention conditions. These data define a reference distribution of compositional variability (/baseline variablility) that contextualizes subsequent changes under dietary exposure.</p>
@@ -378,6 +383,34 @@ Together, these findings demonstrate that chronic HFD induces a reproducible and
         - WT-HFD ends in “inflammatory” space.
         - LA1-HFD stabilizes in a “resilient” space.
         - Villin-Cre ends in “non-pathogenic alternative” space.
+\
+\
+
+
+### Changes in species richness per diet over time
+
+
+
+
+
+```
+##  [1] "Week-0"  "Week-1"  "Week-2"  "Week-3"  "Week-4"  "Week-5"  "Week-6"  "Week-7" 
+##  [9] "Week-8"  "Week-9"  "Week-10" "Week-11" "Week-12"
+```
+
+![](/Users/L347123/Desktop/hfd-microbiome/docs/github_OrganizingManuscriptAnalyses_wk12_files/figure-html/beeswarm-alpha-1.png)<!-- -->
+
+\
+
+![](../docs/figures/alpha_div/obs_byDiet_colorWeek.png)
+
+\
+
+![](/Users/L347123/Desktop/hfd-microbiome/docs/github_OrganizingManuscriptAnalyses_wk12_files/figure-html/beeswarm-alpha2-1.png)<!-- -->
+
+![](../docs/figures/alpha_div/obs_byWeek_colorDiet.png)
+
+\
 \
 \
 
